@@ -15,7 +15,7 @@ generatorsList:
       backgroundColor: '"#2E8B57"' # SeaGreen
       # backgroundColor: '"#800080"' # Purple
       textColor: "White"
-      tagRevision: "1.0.0"
+      tagRevision: "1.0.2"
 
 # STG env
 - clusters:
