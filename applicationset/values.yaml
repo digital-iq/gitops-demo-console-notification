@@ -1,0 +1,65 @@
+repoURL: https://github.com/digital-iq/gitops-demo-console-notification.git
+app_name: helm-console-notification
+helmChartName: console-notification
+argoCDNamespace: infra-gitops
+
+generatorsList:
+# DEV env
+- clusters:
+    selector:
+      matchLabels:
+        env: 'dev'
+        type: app
+    values:
+      text: "DEV environment APP Cluster"
+      backgroundColor: '"#2E8B57"' # SeaGreen
+      # backgroundColor: '"#800080"' # Purple
+      textColor: "White"
+      tagRevision: "main"
+
+# STG env
+- clusters:
+    selector:
+      matchLabels:
+        env: 'stg'
+        type: app
+    values:
+      text: "STG environment APP Cluster"
+      backgroundColor: '"#FF6347"' # Tomato
+      # backgroundColor: '"#000080"' # Navy
+      textColor: "White"
+      tagRevision: "main"
+
+# PRD env
+- clusters:
+    selector:
+      matchLabels:
+        env: 'prd'
+        type: mgt
+    values:
+      text: "PRD environment APP Cluster"
+      backgroundColor: '"#DC143C"' # Crimson
+      # backgroundColor: '"#FF1493"' # DeepPink
+      textColor: "White"
+      tagRevision: "main"
+
+valuesList:
+  values: |-
+    {
+      "text" : '{{ values.text }}',
+      "backgroundColor" : '{{ values.backgroundColor }}',
+      "color" : '{{ values.textColor }}'
+    }
+
+revision: '{{ values.tagRevision }}'
+
+syncPolicyList:
+  retry:
+    limit: -1
+  automated:
+    prune: true
+    selfHeal: true
+  syncOptions:
+  - ApplyOutOfSyncOnly=true
+# - CreateNamespace=true
+  - PruneLast=true
