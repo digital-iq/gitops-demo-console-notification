@@ -6,4 +6,4 @@ spec:
   backgroundColor: {{ .Values.backgroundColor }}
   color: {{ .Values.color }}
   location: BannerTop
-  text: {{ .Values.text }}
+  text: {{ .Values.text }}-Tag 1.0.0
