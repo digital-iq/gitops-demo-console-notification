@@ -15,7 +15,7 @@ generatorsList:
       backgroundColor: '"#2E8B57"' # SeaGreen
       # backgroundColor: '"#800080"' # Purple
       textColor: "White"
-      tagRevision: "main"
+      tagRevision: "1.0.0"
 
 # STG env
 - clusters:
@@ -28,7 +28,7 @@ generatorsList:
       backgroundColor: '"#FF6347"' # Tomato
       # backgroundColor: '"#000080"' # Navy
       textColor: "White"
-      tagRevision: "main"
+      tagRevision: "1.0.0"
 
 # PRD env
 - clusters:
@@ -41,7 +41,7 @@ generatorsList:
       backgroundColor: '"#DC143C"' # Crimson
       # backgroundColor: '"#FF1493"' # DeepPink
       textColor: "White"
-      tagRevision: "main"
+      tagRevision: "1.0.0"
 
 valuesList:
   values: |-
