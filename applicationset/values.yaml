@@ -28,7 +28,7 @@ generatorsList:
       backgroundColor: '"#FF6347"' # Tomato
       # backgroundColor: '"#000080"' # Navy
       textColor: "White"
-      tagRevision: "1.0.0"
+      tagRevision: "1.0.1"
 
 # PRD env
 - clusters:
