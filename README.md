@@ -108,7 +108,7 @@ You can validate the rendered manifest before applying:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/digital-iq/gitops-demo-console-notification](https://github.com/digital-iq/gitops-demo-console-notification/)
+git clone https://github.com/digital-iq/gitops-demo-console-notification/
 cd gitops-demo-console-notification
 
 # Lint
