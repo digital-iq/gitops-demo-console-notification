@@ -11,8 +11,7 @@ This repository provides a GitOps-driven mechanism for deploying `ConsoleNotific
 ```
 .
 ├── applicationset/
-│   ├── values-nonprod.yaml       # Helm values for NonProd clusters
-│   └── values-prod.yaml          # Helm values for Prod clusters
+│   ├── values.yaml       # Helm values for Openshift clusters under Argocd
 │
 ├── helm-console-notification/
 │   ├── Chart.yaml                # Helm Chart metadata
