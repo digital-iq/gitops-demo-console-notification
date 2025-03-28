@@ -39,14 +39,14 @@ You can render and apply the Helm chart manually using the following steps:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/digital-iq/gitops-demo-console-notification](https://github.com/digital-iq/gitops-demo-console-notification/)
+git clone https://github.com/digital-iq/gitops-demo-console-notification
 cd gitops-demo-console-notification
 
 # Lint
 helm lint helm-*/
 
 # Clone applicationset git repo
-git clone [https://github.com/digital-iq/gitops-demo-applicationset-templates](https://github.com/digital-iq/gitops-demo-applicationset-templates/)
+git clone https://github.com/digital-iq/gitops-demo-applicationset-templates
 
 # Render
 helm template main-applicationset ./main-applicationset -f ../applicationset/values.yaml > rendered.yaml
