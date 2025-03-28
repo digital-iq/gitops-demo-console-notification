@@ -47,10 +47,10 @@ helm lint helm-*/
 
 # Clone applicationset git repo
 git clone https://github.com/digital-iq/gitops-demo-applicationset-templates
+cd gitops-demo-applicationset-templates
 
 # Render
 helm template main-applicationset ./main-applicationset -f ../applicationset/values.yaml > rendered.yaml
-cd gitops-demo-applicationset-templates
 
 # Apply to cluster
 oc apply -f rendered.yaml
