@@ -79,6 +79,20 @@ Key Features:
 
 ---
 
+## Helm Chart Variables
+
+The following table outlines the configurable parameters used in the `ConsoleNotification` Helm chart and their default values:
+
+| Variable         | Description                                 | Default Value       |
+|------------------|---------------------------------------------|---------------------|
+| `backgroundColor`| Background color of the banner              | `"#000000"`         |
+| `color`          | Text color of the banner                    | `"#FFFFFF"`         |
+| `text`           | The message text shown in the banner        | `"Environment Notice"` |
+
+These values can be overridden via the appropriate `values-nonprod.yaml` or `values-prod.yaml` file.
+
+---
+
 ## ⚠️ Limitations
 
 - Assumes ArgoCD and ApplicationSet controller are already deployed in the GitOps cluster.
